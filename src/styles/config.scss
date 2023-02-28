@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+// @import "~bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
+	$accent: #e2a534;
+	$text: #333;
+	$fontsize: 16px;
+	$lineheight: 1.65;
+	$userfont: Open-sans, sans-serif;
+  $bgGray: #e5e5e5;
+
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+
+::placeholder {
+  color: #666;
+}
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+
+input,
+textarea {
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $text;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* USER STYLES */
+
+.image {
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.container {
+  max-width: 1530px;
+}
